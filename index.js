@@ -1,7 +1,7 @@
 
 const init = ()=>{
 
-	document.getElementById("body-content").style.border = "thin solid black";
+	// document.getElementById("body-content").style.border = "thin solid #";
 
 console.log("fuckk")
 
@@ -29,9 +29,10 @@ const options = {
 	}
 };
 
-fetch('https://all-cars.p.rapidapi.com/cars', options)
+fetch('https://all-cars.p.rapidapi.comcars', options)
 	.then(response => response.json())
 	.then(function(data){
+		
 		console.log(data)
     
 
@@ -44,7 +45,7 @@ const make=document.querySelector("#ul-id")
 		// })
         const li=document.createElement('h4')
         li.innerHTML=makes.title  
-        	make.appendChild(li)
+        make.appendChild(li)
     })
 
 })}

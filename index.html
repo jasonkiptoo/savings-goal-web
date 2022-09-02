@@ -3,6 +3,7 @@
     <title>Personal Car Savings</title>
     <link rel="stylesheet" href="style.css">
 
+    <script defer type="text/javascript" src="index.js"></script>
 
 <body>
     <div class="topnav">
@@ -37,10 +38,22 @@
         </div>
         <p>Some text..</p>
       </div>
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
+      <div class="card-calculator">
+        <h2> Target Savings Calculator   </h2>
+        <h5>Calculate how much you need to reach your target</h5>
+        <div class="card-calculator-img" style="height:200px;">
+            <form>
+                <label for="amount">Amount in Ksh</label><br>
+                <input type="number" id="amount" name="amount" placeholder="Enter Amount"><br><br>
+                <label for="duration">Duration in years:</label><br>
+                <input type="number" id="duration" name="duration" placeholder="Duration expected">
+
+                <input type="submit" id="submitBtn" name="submitBtn">
+              </form>
+
+        
+        
+        </div>
         <p>Some text..</p>
       </div>
     </div>
@@ -50,11 +63,9 @@
         <img src="assetss/coder-dog.png"  width="200"  height="200" >
         <p>Ever dreamt of owning a car ? Its this easy. Save your money tussle free</p>
       </div>
-      <div class="card">
+      <div id="ul-id">
         <h3>Popular Saving Goals</h3>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div>
+        
       </div>
       <div class="card">
         <h3>Follow Me</h3>
@@ -68,4 +79,5 @@
   </div>
 
 </body>
+
   </html>
