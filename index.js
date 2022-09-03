@@ -1,12 +1,40 @@
+document.addEventListener('DOMContentLoaded',()=>{
 
-const init = ()=>{
+	let form=document.querySelector('form')
+	form.addEventListener('submit', (e)=>{
+		e.preventDefault()
+		//  console.log(e.target.targetAmount.value)
+	});
 
-	// document.getElementById("body-content").style.border = "thin solid #";
 
-console.log("fuckk")
+	const submitBtn=document.querySelector("#submitBtn");
 
-// let imgg=document.createElement('h3');
-// fetchComments();
+	submitBtn.addEventListener("click",()=>{
+		calcSavings()
+
+	});
+	
+
+	function calcSavings(){
+		const rate=0.1;
+		var targetDuration=parseInt(document.getElementById("targetDuration").value)
+		var targetAmount=parseInt(document.getElementById("targetAmount").value)
+
+	    console.log((targetAmount/(1+(rate*targetDuration))))
+
+	}
+
+	
+
+
+
+	})
+   
+
+
+
+
+
 
 // const options = {
 // 	method: 'GET',
@@ -21,84 +49,31 @@ console.log("fuckk")
 // 	.then(response => console.log(response))
 // 	.catch(err => console.error(err));
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '69777ab306msh505ca15cae9f198p15c351jsn20363828244e',
-		'X-RapidAPI-Host': 'all-cars.p.rapidapi.com'
-	}
-};
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '69777ab306msh505ca15cae9f198p15c351jsn20363828244e',
+// 		'X-RapidAPI-Host': 'all-cars.p.rapidapi.com'
+// 	}
+// };
 
-fetch('https://all-cars.p.rapidapi.comcars', options)
-	.then(response => response.json())
-	.then(function(data){
+// fetch('https://all-cars.p.rapidapi.com/cars', options)
+// 	.then(response => response.json())
+// 	.then(function(data){
 		
-		console.log(data)
+// 		console.log(data)
     
 
-const make=document.querySelector("#ul-id")
+// const make=document.querySelector("#ul-id")
 
-    data.forEach(makes => {
+//     data.forEach(makes => {
 
-		// makes.forEach(car=>{
+// 		// makes.forEach(car=>{
 
-		// })
-        const li=document.createElement('h4')
-        li.innerHTML=makes.title  
-        make.appendChild(li)
-    })
+// 		// })
+//         const li=document.createElement('h4')
+//         li.innerHTML=makes.title  
+//         make.appendChild(li)
+//     })
 
-})}
-
-
-
-// 	// .catch(err => console.error(err));
-
-    
-
-// }
-
-    // )
-// }
-
-
-
-
-
-
-// function fetchComments(){
-//     // fetch(`http://localhost:3000/comments`)
-//     // fetch(`https://parallelum.com.br/fipe/api/v1/carros/marcas/59/modelos/5940/anos`)
-//     fetch(`https://parallelum.com.br/fipe/api/v1/carros/marcas`)
-//     // fetch('https://vehapi.com/api/v1/car-lists/get/all/car/makes')
-    
-//     .then(res=>res.json())
-
-//     .then(function(data){
-
-//         console.log(data)
-              
-       
-//         data.forEach(comment =>{
-
-//             let commentList=document.getElementById("image-src")
-//             let commentListt=document.getElementById("ul")
-//         let li=document.createElement('li')
-//         let lis=document.createElement('ol')
-
-//         li.textContent=comment.author
-//         lis.textContent=comment.nome
-
-//         commentList.appendChild(li)
-//         commentListt.appendChild(lis)
-            
-//     }) 
-// }
-// )
-// .catch((err)=>err(console.log("Error")))
-
-// }
-    
-
-document.addEventListener('DOMContentLoaded',init)
-    
+// })   
