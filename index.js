@@ -17,10 +17,21 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 	function calcSavings(){
 		const rate=0.1;
-		var targetDuration=parseInt(document.getElementById("targetDuration").value)
+		let targetDuration=parseInt(document.getElementById("targetDuration").value)
 		var targetAmount=parseInt(document.getElementById("targetAmount").value)
+	    let totalSavings=((targetAmount*(rate*targetDuration))+targetAmount)/(12*targetDuration)
+			console.log(totalSavings)
+		displayAmount(totalSavings,targetDuration)
 
-	    console.log((targetAmount/(1+(rate*targetDuration))))
+	}
+
+	function displayAmount(totalSavings,targetDuration){
+		const displayValue=document.getElementById("display-values")
+		// let amount=totalSavings;
+		const amountSaved=document.getElementById('disp-Amount');
+		amountSaved.textContent=`Pay ${totalSavings} Ksh every month for the next ${targetDuration} years to achieve your goal`
+		displayValue.appendChild(amountSaved)
+
 
 	}
 
