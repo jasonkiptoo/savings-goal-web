@@ -33,6 +33,7 @@
         deposits.</h5>
         <div class="img1" style="height:200px;">
         <img src="assetss/download.jpeg">
+        
         <img src="assetss/coder-dog.png"  width="200"  height="200" >
           
         </div>
@@ -42,7 +43,9 @@
         <h2> Target Savings Calculator   </h2>
         <h5>Calculate how much you need to reach your target</h5>
         <div class="card-calculator-img" style="height:200px;">
-            <form>
+
+        <div id="calc-Values-Form">
+            <form id="calc-Values-Form">
                 <label for="amount">Target Amount in Ksh</label><br>
                 <input type="number" id="targetAmount" name="amount" placeholder="Enter Target Amount"><br><br>
                 <label for="duration">Duration in years:</label><br>
@@ -50,30 +53,42 @@
                     <br><br>    
                 <input type="submit" id="submitBtn" name="submitBtn">
               </form>
-
-              <form id="display-values">
-                <label for="amount">Target Amount in Ksh</label>
-                <h4 id="disp-Amount"> </h4><br>
-                
-                <label for="amount"></label><br>
-
-              </form>
-
-
-        
-        
         </div>
-        <p>Some text..</p>
+
+        <div id="display-values-Form">
+              <form id="display-Values-Form">
+                <br>
+                <label for="amount"><strong>Note:</strong>This estimate assumes an average interest rate of 10%</label>
+                <h4 id="disp-Amount"> </h4>
+                <label for="amount"></label><br>
+              </form>   
+        </div>     
+        </div>
       </div>
     </div>
     <div class="rightcolumn">
       <div class="card">
         <h2>Saving Goals Ideas?</h2>
-        <img src="assetss/coder-dog.png"  width="200"  height="200" >
+
+         <!-- Slideshow container -->
+<div class="slideshow-container">
+  <div class="mySlides">
+        <img src="assetss/Car2.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="assetss/car1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+      <img src="assetss/car.jpeg" style="width:100%">
+  </div>
+</div>
+
         <p>Ever dreamt of owning a car ? Its this easy. Save your money tussle free</p>
       </div>
       <div id="ul-id">
-        <h3>Popular Saving Goals</h3>
+        <h3>Popular Car Models</h3>
         
       </div>
       <div class="card">
@@ -84,9 +99,11 @@
   </div>
   
   <div class="footer">
-    <h2>Footer</h2>
+    <h3> Savings Goal</h3>
   </div>
 
+
+ 
 </body>
 
   </html>
