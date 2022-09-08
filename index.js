@@ -31,21 +31,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 		displayValue.appendChild(amountSaved)
 	}
 	})
-  
-
-
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '69777ab306msh505ca15cae9f198p15c351jsn20363828244e',
-// 		'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://car-data.p.rapidapi.com/cars/makes', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
 
 const options = {
 	method: 'GET',
