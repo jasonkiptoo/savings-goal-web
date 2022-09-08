@@ -51,11 +51,11 @@ const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '69777ab306msh505ca15cae9f198p15c351jsn20363828244e',
-		'X-RapidAPI-Host': 'cardekho.p.rapidapi.com'
+		'X-RapidAPI-Host': 'car-database.p.rapidapi.com'
 	}
 };
 
-fetch('https://car-data.p.rapidapi.com/cars/makes', options)
+fetch('https://car-database.p.rapidapi.com/makes', options)
 	.then(response => response.json())
 	.then(function(data){
 		console.log(data)	
