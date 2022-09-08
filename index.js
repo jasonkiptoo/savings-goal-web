@@ -55,7 +55,7 @@ const options = {
 	}
 };
 
-fetch('https://cardekho.p.rapidapi.com/search?make=%3CREQUIRED%3E&model=%3CREQUIRED%3E', options)
+fetch('https://car-data.p.rapidapi.com/cars/makes', options)
 	.then(response => response.json())
 	.then(function(data){
 		console.log(data)	
