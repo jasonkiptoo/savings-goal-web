@@ -70,8 +70,9 @@ body {
   color: rgb(252, 7, 7);
 }
 #car-card{
-  background-color: #04AA6D;
-  margin: 5px;
+  display: flex;
+  background-color: rgb(162, 162, 165);
+  margin: 1px;
   border-radius: 15px 50px 30px 5px;
   width: 200px;
   height: 200px;

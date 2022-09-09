@@ -78,8 +78,53 @@ fetch('https://car-database.p.rapidapi.com/makes', options)
 	
 	fetch('https://all-cars.p.rapidapi.com/cars/mazda', options)
 		.then(response => response.json())
-		.then(response => console.log(response[2]))
-		.catch(err => console.error(err));
+
+		.then(function(completeData){
+
+			console.log(completeData)
+			
+			let initData="";
+			completeData.slice(0,3).map((data)=>{
+				initData+=` <div id="car-card">
+				
+				<img id="imageCar" src=${data.img} alt="img" width="200px" height="150px">
+				<h3 id="Title">${data.title}</h3>`;
+			});
+
+			document.getElementById("car-card").innerHTML=initData;
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			// data.forEach(carMake => {
+			// 	const carmake=document.querySelector("car-card")
+			// 	let showCar=document.getElementById('Title')
+			// 	let showCarImage=document.getElementById('imageCar')
+			// 	showCar.innerHTML=carMake.title
+			// 	showCarImage.src=carMake.img
+				
+			// });
+			
+		}
+		  
+
+    
+
+	)
 	
 
 
