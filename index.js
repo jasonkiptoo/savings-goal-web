@@ -31,6 +31,21 @@ document.addEventListener('DOMContentLoaded',()=>{
 		displayValue.appendChild(amountSaved)
 	}
 	})
+  
+
+
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '69777ab306msh505ca15cae9f198p15c351jsn20363828244e',
+// 		'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
+// 	}
+// };
+
+// fetch('https://car-data.p.rapidapi.com/cars/makes', options)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
 
 const options = {
 	method: 'GET',
@@ -52,6 +67,27 @@ fetch('https://car-database.p.rapidapi.com/makes', options)
     })
 
 	//code to fetch imagees on to the card
+
+	const options = {
+		method: 'GET',
+		headers: {
+			'X-RapidAPI-Key': '69777ab306msh505ca15cae9f198p15c351jsn20363828244e',
+			'X-RapidAPI-Host': 'all-cars.p.rapidapi.com'
+		}
+	};
+	
+	fetch('https://all-cars.p.rapidapi.com/cars/mazda', options)
+		.then(response => response.json())
+		.then(response => console.log(response[2]))
+		.catch(err => console.error(err));
+	
+
+
+
+
+
+
+
 	// Change image every 2 seconds
 	let slideIndex = 0;
 	showSlides();

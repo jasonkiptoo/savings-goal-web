@@ -69,7 +69,23 @@ body {
 #disp-Amount{
   color: rgb(252, 7, 7);
 }
+#car-card{
+  background-color: #04AA6D;
+  margin: 5px;
+  border-radius: 15px 50px 30px 5px;
+  width: 200px;
+  height: 200px;
+}
+#car-card h3{
+margin: 15px;
+}
+#car-card h4{
+  margin: 20px;
+  }
+#display-model{
+  display: flex;
 
+}
 #display-Values-Form{
   float: right;
   width: 50%;
