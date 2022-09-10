@@ -24,8 +24,6 @@ document.addEventListener('DOMContentLoaded',()=>{
 /////function to display the target amount per month.
 	function displayAmount(totalSavings,targetDuration){
 		const displayValue=document.getElementById("display-values")
-		// let amount=totalSavings;
-		// document.getElementById("display-Values-Form").style.border = "thick solid red";
 		const amountSaved=document.getElementById('disp-Amount');
 		amountSaved.textContent=`Pay ${totalSavings} Ksh every month for the next ${targetDuration} year(s) to achieve your goal !`
 		displayValue.appendChild(amountSaved)
@@ -34,18 +32,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   
 
 
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '69777ab306msh505ca15cae9f198p15c351jsn20363828244e',
-// 		'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
-// 	}
-// };
-
-// fetch('https://car-data.p.rapidapi.com/cars/makes', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
 
 const options = {
 	method: 'GET',
@@ -93,47 +79,8 @@ fetch('https://car-database.p.rapidapi.com/makes', options)
 
 			document.getElementById("car-card").innerHTML=initData;
 
-
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			// data.forEach(carMake => {
-			// 	const carmake=document.querySelector("car-card")
-			// 	let showCar=document.getElementById('Title')
-			// 	let showCarImage=document.getElementById('imageCar')
-			// 	showCar.innerHTML=carMake.title
-			// 	showCarImage.src=carMake.img
-				
-			// });
-			
-		}
-		  
-
-    
-
-	)
-	
-
-
-
-
-
-
-
-	// Change image every 2 seconds
+		})
+		// Change image every 2 seconds
 	let slideIndex = 0;
 	showSlides();
 
