@@ -9,8 +9,7 @@ the user can also calclutae how far from the goal and how long it will take to a
 
 
 Link to the website
-
-||https://jasonkiptoo.github.io/savings-goal-web/||
+https://jasonkiptoo.github.io/savings-goal-web
 
 together with the Car data API https://rapidapi.com/principalapis/api/car-data/ i used this api to 
 for search of the different car makes and model as provided by the API
